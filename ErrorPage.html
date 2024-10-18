@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Erreur 404</title>
+</head>
+<body id="dark">
+     <div class="container">
+        <header class="header">
+            <nav class="navbar-404" >
+                <div class="logo"> EcoTech <span>Solutions</span></div>
+            </nav> 
+        </header>
+
+        <div class="box-404">
+            <h1>404</h1>
+            <br>
+            <p>Oups, la page que vous recherchez est introuvable.</p>
+            <br>
+            <button class="btn-error">
+                <a href="index.html">Retour à l'accueil</a>
+            </button>
+        </div>
+     </div>
+     <script>
+        var darkBtn = document.getElementById("dark-mode-btn");
+        var body = document.getElementById("dark");
+        darkBtn.onclick = function(){
+            body.classList.toggle("darkmode");
+        } 
+
+        
+    </script> 
+</body>
+</html>

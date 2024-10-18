@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body id="dark">
+    <div class="container">
+        <!-- --------------------------------- Header ----------------------------------- -->
+        <header class="header">
+            <nav class="navbar" >
+                <div class="logo"> EcoTech <span>Solutions</span></div>
+                <ul>  
+                    <li> <a href="index.html">Accueil</a> </li>
+                    <li> <a href="about.html">À propos-nous</a> </li>
+                    <li> <a href="product.html">Nos Produit</a> </li>
+                    <li> <a href="contact.html">Contactez-nous</a> </li>
+                </ul>
+            </nav> 
+        </header>
+        <!-- ------------------------------------------------------------------------- -->
+
+        <section class="page-produits">
+            <h1>Nos <span>Solutions</span> Technologiques</h1>
+            <!-- ---------------------- recherche bar ------------------------- -->
+            <div class="bar-recherche-box">
+                <input type="text" placeholder="Tapez ici" class="input-recherche" >
+                <button class="btn-recherche">Rechercher</button>
+            </div>
+           <!-- ------------------------ product carts ------------------------ -->
+            <div class="box-carts-prod">
+               <div class="cart-produit">
+                 <img src="" alt="">
+                 <h3> Produit 1</h3>
+                 <p>Description</p>
+                 <p>Prix: 1999 DH</p>
+                <button class="add-cart-btn">Ajouter au panier</button>
+              </div>
+
+                <div class="cart-produit">
+                    <img src="" alt="">
+                    <h3> Produit 2</h3>
+                    <p>Description</p>
+                    <p>Prix: 1999 DH</p>
+                   <button class="add-cart-btn">Ajouter au panier</button>
+                </div>
+        
+                <div class="cart-produit">
+                    <img src="" alt="">
+                    <h3> Produit 3</h3>
+                    <p>Description</p>
+                    <p>Prix: 1999 DH</p>
+                   <button class="add-cart-btn">Ajouter au panier</button>
+                </div>
+        
+                <div class="cart-produit">
+                    <img src="" alt="">
+                    <h3> Produit 4</h3>
+                    <p>Description</p>
+                    <p>Prix: 1999 DH</p>
+                   <button class="add-cart-btn">Ajouter au panier</button>
+                </div>
+
+             <div class="cart-produit">
+                <img src="" alt="">
+                <h3> Produit 5</h3>
+                <p>Description</p>
+                <p>Prix: 1999 DH</p>
+               <button class="add-cart-btn">Ajouter au panier</button>
+             </div>
+       
+               <div class="cart-produit">
+                   <img src="" alt="">
+                   <h3> Produit 6</h3>
+                   <p>Description</p>
+                   <p>Prix: 1999 DH</p>
+                  <button class="add-cart-btn">Ajouter au panier</button>
+               </div>
+       
+            </div>
+        </section>
+        
+        <!-- ------------------------------- footer part ----------------------------- -->    
+        <div class="box-footer-part">
+            <footer>
+                <div class="footer-container">
+                    <div class="part-1">
+                        <h5>©2024 EcoTech <span>Solutions</span></h5>
+                        <button id="dark-mode-btn">Dark Mode</button>
+                    </div>
+                    <!-- ------------------------------------------------ -->
+                    <div class="part-2">
+                            <div class="sub-nav">
+                                <a href="about.html">À propos de nous</a>
+                                <a href="product.html">Nos Produits</a>
+                                <a href="contact.html">Contactez-nous</a>
+                            </div>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.x.com"><i class="fa-solid fa-x"></i></a>
+                                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                            </div>
+                       </div>
+                   <!-- ------------------------------------------------- -->
+             </div>
+            </footer>
+        </div>   
+    </div> 
+
+
+   </div>
+   <script>
+    var darkBtn = document.getElementById("dark-mode-btn");
+    var body = document.getElementById("dark");
+    darkBtn.onclick = function(){
+        body.classList.toggle("darkmode");
+    } 
+
+    
+</script> 
+</body>
+</html>
