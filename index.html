@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EcoTech-solution est une entreprise de technologies écologiques conçue pour aider les autres entreprises à optimiser ses opérations et adopter des technologies plus vertes et durable.">
+    <meta name="keywords" content="technologie, ecologique, solution, durable, verte"> 
+    <meta name="author" content="Mohamed Boukab">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Document</title>
+    <title>Accueil</title>
     
 </head>
    
     <body id="dark" >
-    <div class="container">
+    <div class="container" id="container">
             <!-- ----------------------- Page 1 --------------------- -->
-            <div class="page1" id="dark-home1" >
+            <div class="page1">
                         <header class="header">
                             <nav class="navbar" >
                                 <div class="logo"> EcoTech <span>Solutions</span></div>
@@ -38,7 +41,7 @@
                         </section>
             </div>
              <!-- --------------------- page 2 ----------------------- -->
-            <div class="page2" id="dark-home2">
+            <div class="page2" >
                         <div class="sec1-left">
                             <article class="art1-top">
                                 <h1>Des Solutions Écologiques, Rapides et Performantes</h1>
@@ -63,7 +66,7 @@
             </div>
 
              <!-- ---------------------  Page 3--------------------------- -->
-            <div class="page3" id="dark-home3">
+            <div class="page3">
                     <section>
                             <div class="part1-left">
                             <img src="/images/page3-1.jpg" alt="">
@@ -89,7 +92,7 @@
                     </section>
             </div>
             <!-- --------------------- Page 4 ----------------------------- -->
-            <div class="page4" id="dark-home4">
+            <div class="page4" id="page4-home">
                     <div class="box-details-part">
                         <h1>Un Prix pour Tous</h1>
                         <h2>Technologies Durables, Accessibles à Tous</h2>
@@ -132,11 +135,12 @@
     <script>
         var darkBtn = document.getElementById("dark-mode-btn");
         var body = document.getElementById("dark");
+        var container = document.getElementById("container");
         darkBtn.onclick = function(){
             body.classList.toggle("darkmode");
-        } 
-
-        
+            body.classList.toggle("dark-colors");
+            container.classList.toggle('containerDark');
+        }  
     </script> 
     
 </body>

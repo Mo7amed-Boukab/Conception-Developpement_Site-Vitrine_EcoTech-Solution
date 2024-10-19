@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EcoTech-solution est une entreprise de technologies écologiques conçue pour aider les autres entreprises à optimiser ses opérations et adopter des technologies plus vertes et durable.">
+    <meta name="keywords" content="technologie, ecologique, solution, durable, verte"> 
+    <meta name="author" content="Mohamed Boukab">
     <link rel="stylesheet" href="style.css">
     <title>Erreur 404</title>
 </head>
 <body id="dark">
-     <div class="container">
+     <div class="container" id="container">
         <header class="header">
             <nav class="navbar-404" >
                 <div class="logo"> EcoTech <span>Solutions</span></div>
@@ -17,7 +20,7 @@
         <div class="box-404">
             <h1>404</h1>
             <br>
-            <p>Oups, la page que vous recherchez est introuvable.</p>
+            <p>Oups!! la page recherché est introuvable</p>
             <br>
             <button class="btn-error">
                 <a href="index.html">Retour à l'accueil</a>
@@ -27,11 +30,12 @@
      <script>
         var darkBtn = document.getElementById("dark-mode-btn");
         var body = document.getElementById("dark");
+        var container = document.getElementById("container");
         darkBtn.onclick = function(){
             body.classList.toggle("darkmode");
-        } 
-
-        
+            body.classList.toggle("dark-colors");
+            container.classList.toggle('containerDark');
+        }  
     </script> 
 </body>
 </html>

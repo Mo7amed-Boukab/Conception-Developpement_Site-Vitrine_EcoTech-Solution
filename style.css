@@ -1,5 +1,5 @@
 *{
-    margin:  0;
+    margin: 0;
     padding: 0;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -9,65 +9,76 @@
 }
 .container .page1 {
     height: 100vh;
-    background-image: url("Path.png");
+    background-image: url("/images/Path.png");
     background-position-x: right;
     background-repeat: no-repeat;
     background-size: 620px;
 }
+
+:root{
+    --main-color: #111B47;
+    --seconde-color: #515c89;
+    --third-color: #666b81;
+    --white-color:#ffffff;
+    --white-grey-color:#dadbe030;
+    --grey-color:#717273;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --shadow-lite-color:rgba(0, 0, 0, 0.1);
+    --white-cart-color:#ffffff;
+    --white-title-color:#111B47;
+    --blue-ciel-color:#6E85E4;
+}
+
 /* -------------------------------- Dark Mode ------------------------------------ */
-/* .add-dark-home1{
-    background-color: #000;
-    color: #fff;
-}
-.add-dark-home2{   
-    background-color: #000;
-    color: #fff;
-}
-.add-dark-home3{
-    background-color: #000;
-    color: #fff;
-}
-.add-dark-home4{   
-    background-color: #000;
-    color: #fff;
-}
-.dark-footer{
-    background-color: #000;
-    color: #fff;
-} */
 .darkmode{
-    color:grey;
-    background-color: #000;
+    background-color: #000000;
+}
+.dark-colors{
+    --main-color: #ffffff;
+    --seconde-color: #3e3f78;
+    --third-color: #7782ac;
+    --white-color:#12133e;
+    --white-grey-color:#000000;
+    --white-cart-color:#0b0b0b74;
+    --white-title-color:#ffffff;
+    --grey-color:#527190;
+    --blue-ciel-color:#5d85af;
+    --shadow-color: rgba(255, 255, 255, 0.3);
+    --shadow-lite-color:rgba(255, 255, 255, 0.1);
+}
+.containerDark{
+    background-color: #010112;
+    box-shadow: 0 0 10px var(--shadow-lite-color);
 }
 
 /* ------------------------------ Fin Drak Mode ---------------------------------- */
 /* ----------------------------- Header 404 -------------------------- */
 .navbar-404{
     padding: 40px;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 -2px 10px var(--shadow-lite-color);
     text-align: center;
 }
 .box-404{
     height: 60vh;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px var(--shadow-lite-color);
     margin-top: 60px;
     text-align: center;
 }
 .box-404 h1 {
     font-size: 110px;
-    color: #111B47;
+    color: var(--main-color);
     padding: 50px 0 0 0;
 }
 
 .box-404 p {
     font-size: 18px;
-    color: #515c89;
+    color: var(--seconde-color);
     margin: 10px 0;
 }
 
 .btn-error a {
     text-decoration: none;
-    color: #111B47;
+    color: var(--main-color);
 }
 .btn-error{
     border: none;
@@ -75,16 +86,16 @@
 }
 .btn-error a{
     text-decoration: none;
-    color: #111B47;
-    background-color: #ffffff;
+    color: var(--main-color);
+    background-color: var(--white-color);
     padding: 8px 24px;
     cursor: pointer;
-    box-shadow: 0 -2px 8px rgba(34, 47, 101, 0.3);
+    box-shadow: 0 -2px 8px var(--shadow-color);
 }
 .btn-error a:hover {
-    box-shadow: 0 5px 10px rgba(34, 47, 101, 0.3);
-    background-color: #515c89;
-    color: #ffffff;
+    box-shadow: 0 5px 10px var(--shadow-color);
+    background-color: var(--seconde-color);
+    color:var(--white-color);
 }
 
 /* ------------------------------------------------------------------- */
@@ -107,19 +118,20 @@
 }
 .header .navbar ul li a{
     text-decoration: none;
-    color: #111B47;
+    color: var(--main-color);
 }
 .header .navbar ul li a:hover{
-    color: #505F98;
+    color: var(--seconde-color);
 }
 .header .logo{
-    color: #111B47;
+    color: var(--main-color);
     font-size: 24px;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
+    padding-left: 20px ;
 }
 .header .logo span{
-    color:#505F98;
+    color:var(--seconde-color);
 }
 /* ------------------------------- Fin Header ------------------------------ */
 /* ----------------------------- Main : Home page -------------------------- */
@@ -138,10 +150,10 @@
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 36px;
-    color: #111B47;
+    color: var(--main-color);
 }
 .content-left p{
-    color: #505F98; 
+    color: var(--third-color); 
     padding: 10px 5px 10px 0;
     font-size: 14px;
 }
@@ -149,36 +161,34 @@
 
 .content-left .btn1 a{
     text-decoration: none;
-    color: #ffffff;
+    color: var(--white-color);
     padding: 5px;
 }
 .content-left .btn2 a{
     text-decoration: none;
-    color: #111b47;
+    color: var(--main-color);
 
 }
 .content-left .btn1 {
     margin: 20px 10px 0 0;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
-    background-color: #111b47;
-   
+    box-shadow: 0 -2px 4px var(--shadow-color);
+    background-color: var(--main-color);
+    color: #fff;
 }
 .content-left .btn2{
     margin: 20px 10px 0 0;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
+    box-shadow: 0 -2px 4px var(--shadow-lite-color);
+    background-color: var(--white-color);
 }
 .content-left .btn1:hover{
-    background-color: #505f98;
     cursor: pointer;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 -2px 6px var(--shadow-color);
     transform: translateY(-3px);
     transition: transform 0.3s ease;
 }
 .content-left .btn2:hover{
-    border-color: #6a7cc5;
     cursor: pointer;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 -2px 6px var(--shadow-color);
     transform: translateY(-3px);
     transition: transform 0.3s ease;
 }
@@ -212,11 +222,11 @@
     margin: 20px 0 30px 0;
 }
 .sec1-left .art1-top h1{
-    color: #222F65;
+    color: var(--main-color);
     padding: 10px 0;
 }
 .sec1-left .art1-top p{
-    color: #666b81;
+    color: var(--third-color);
     padding: 10px 0;
     width: 490px;
     font-size: 14px;
@@ -229,13 +239,13 @@
     margin-top: 50px;
 }
 .art2-buttom h1{
-   color: #222F65;
+    color: var(--main-color);
    padding: 10px;
 }
 .art2-buttom p{
     width: fit-content;
     font-size: 14px;
-    color: #5D6970;
+    color: var(--third-color);
 }
 /* ---------------------------------- Section rignt : image */
 .container .page2 .sec2-rignt{
@@ -247,7 +257,7 @@
 /* -------------------------------------------- Page 3: Home */
 .container .page3{
     height: 100vh;
-    background-color: #dadbe030;
+    background-color: var(--white-grey-color);
 }
 /* ----------------------- Styling in both sections in Page 3 */
 .container .page3 section{
@@ -269,36 +279,34 @@
 .page3 section .part2-rignt h1{
     font-family: "Roboto", sans-serif;
     font-weight: 600;
-    color: #222F65;
+    color: var(--main-color);
 }
 .page3 section .part2-rignt p{
-    color: #6F7CB2;
     padding: 20px 0 20px 0;
     width: fit-content;
     font-size: 14px;
-    color: #5D6970;
+    color: var(--third-color);
 }
 /* ------------------------------------------  Page 3: Home => button */
 section button{
     padding: 6px 20px;
     margin: 20px 10px 0 0;
     border: none ;
-    background-color: #111B47;
-    color: #ffffff;
+    background-color: var(--main-color);
+    color: var(--white-color);
     
 }
 section button:hover{
-    background-color: #5D6970;
-    color: #fff;
+    background-color: var(--grey-color);
+    color: var(--white-color);
     cursor: pointer;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 -2px 6px var(--shadow-color);
     transform: translateY(-3px);
     transition: transform 0.3s ease;
 }
 /* ------------------------------------------------- End Page 3: Home */
  .container .page4{
     height: 100vh;
-    background-color: #ffffff;
 }
 .page4 .box-details-part{
     text-align: center;
@@ -309,79 +317,76 @@ section button:hover{
 
 .box-details-part h1, h2{
     padding: 10px;
-    color: #111B47;
+    color: var(--main-color);
 }
 .box-details-part #prix{
     font-size: 40px;
     padding: 20px;
-    color: #717273;
+    color: var(--grey-color);
 }
 .box-details-part p{
     padding: 10px;
     font-size: 14px;
-   color: #546195;
+   color: var(--third-color);
 }
 .box-details-part h5{
-    color: #5D6970;
+    color: var(--third-color);
     font-weight: 600;
     padding: 20px;
 }
 .box-details-part button{
     padding: 8px 20px;
     border: none;
-    background-color: #111B47;
-    color: #ffffff;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    box-shadow: 0 2px 10px var(--shadow-color);
 }
 .box-details-part button:hover{
-    background-color: #fff;
+    background-color: var(--white-color);
     border: none;
-    color: #111B47; 
+    color: var(--main-color); 
     cursor: pointer;   
-    box-shadow: 0 5px 15px rgba(34, 47, 101, 0.3);
+    box-shadow: 0 2px 10px var(--shadow-color);
     transform: translateY(-2px);
     transition: transform 0.5s ease;
 }
 /* ------------------------------ footer part -------------------------- */
 
 .box-footer-part{
-     background: #ffffff;;
-     box-shadow: 0 -6px 10px rgba(0, 0, 0, 0.1);
-     padding-bottom: 20px;  
+     box-shadow: 0 -5px 20px var(--shadow-lite-color);
      margin-top: 50px;
 }
 .footer-container {
-    background-color: #ffffff;
     width: 90%;
     margin: 0 auto;
 } 
 .footer-container .part-1 {
     display: flex;
     justify-content: space-between;
-    background: #ffffff;
     padding: 30px;
-    border-bottom: 1px solid #546195;
+    border-bottom: 1px solid var(--seconde-color);
 }
 /* ----------------- footer part 1 content styling */
 .part-1 h5 {
     font-size: 16px;
-    color: #111B47;
+    color: var(--main-color);
 }
 .part-1 h5 span{
-    color: #546195;
+    color: var(--seconde-color);
 }
 .part-1 button{
     padding: 8px 24px;
     border: none;
-    color: #111B47;
-    background-color: #ffffff;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    color: var(--main-color);
+    background-color: var(--white-color);
+    box-shadow: 0 2px 10px var(--shadow-color);
 }
 .part-1 button:hover{
-    color: #fff;
+    color: var(--white-color);
     border: none;
-    background-color: #111B47; 
+    background-color: var(--main-color); 
     cursor: pointer;   
-    box-shadow: 0 5px 8px rgba(34, 47, 101, 0.3);
+    box-shadow: 0 2px 10px var(--shadow-lite-color);
     transform: translateY(-2px);
     transition: transform 0.5s ease;
 }
@@ -391,19 +396,18 @@ section button:hover{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: #ffffff;
 }
 
 .part-2 .sub-nav a {
     text-decoration: none;
-    color: #546195;
+    color: var(--seconde-color);
     font-size: 14px;
     padding: 0 16px;
     transition: color 0.3s;
 }
 
 .part-2 .sub-nav a:hover {
-    color: #111B47;
+    color: var(--main-color);
 }
 
 .social-icons a {
@@ -412,33 +416,15 @@ section button:hover{
 
 .social-icons a i {
     font-size: 18px; 
-    color: #546195;
+    color: var(--seconde-color);
     transition: 0.3s ease;
 }
 
 .social-icons a:hover i {
-    color: #111B47; 
+    color: var(--main-color); 
     transform: scale(1.2); 
 }
 
-/* ----------------- dark mode button styling */
-
-.dark-mode{
-    border: none;
-    padding: 8px 30px;
-    box-shadow: 0 2px 4px rgba(6, 7, 10, 0.3);
-    color: #111B47;
-    background-color: #ffffff;
-    font-size: 14px;
-}
-.dark-mode:hover{
-    cursor: pointer;
-    background-color: #111B47;
-    color: #ffffff;
-    box-shadow: 0 5px 15px rgba(34, 47, 101, 0.3);
-    transform: translateY(2px);
-    transition: transform 0.5s ease;
-}
 /* ------------------------------- End Footer ------------------------------ */
  /* --------------------Page 1 about --------------------- */
 .container .page1-about{
@@ -446,6 +432,7 @@ section button:hover{
     justify-content: space-between;
     align-items: center;
     height: 80vh;
+    padding: 0 20px;
 }
 /* ------------------- left part */
 .page1-about .content-box-left{
@@ -461,11 +448,11 @@ section button:hover{
     font-family: "Roboto", sans-serif;
     font-weight: 800;
     margin-top: 30px;
-    color: #222F65;
+    color: var(--main-color);
 }
 
 .content-box-left .art1 p{
-    color: #3D4C88;
+    color: var(--third-color);
     padding: 16px 0 16px 0;
     width: 550px;
     font-size: 14px;
@@ -488,13 +475,13 @@ section button:hover{
     gap: 10px; 
 }
 .art2 h3{
-   color: #111B47;
+   color: var(--main-color);
     padding: 5px 0;
     font-weight: 800;
     width: 250px;
 }
 .art2 p{
-    color: #5D6970;
+    color: var(--grey-color);
     padding: 4px 0;
     font-size: 14px;
 }
@@ -507,7 +494,6 @@ section button:hover{
 /* ----------------- page 2 about ------------------- */
 .page2-about{
    height: 100vh;
-   background-color: #FFF;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -518,8 +504,8 @@ section button:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F7F7F7;
     height: 80%;
+    width: 100%;
     margin-top: 20px;
 }
 /* ---------------------- left => content */
@@ -530,27 +516,27 @@ section button:hover{
 }
 
 .box-content .part1-left h1{
-    font-size: 34px;
+    font-size: 40px;
     font-family: "Roboto", sans-serif;
     font-weight: 800;
     padding: 16px 32px;
-    color: #091133;
+    color: var(--main-color);
 }
 /* ---------------------- right => image */
 .box-content .part2-rignt img{
     width: 500px;
     height: 100%;
+    padding:0 ;
 }
 /* ------------------------------------------- */
 .page2-about .part1-left p{
-    color: #6F7CB2;
+    color:var(--grey-color);
     font-size: 16px;
     padding: 16px 32px;
 }
-/* -------------------------------------------------- */
+/* ------------------------ Page 3 about ---------------------- */
 .page3-about{
     height: 100vh;
-    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -558,6 +544,7 @@ section button:hover{
 .page3-about .part1{
    width: 50%;
    margin-top: 80px;
+   padding: 0 20px;
 }
 
 .page3-about .part1 img{
@@ -566,14 +553,15 @@ section button:hover{
 }
 .page3-about .part2 {
     width: 50%;
+    padding: 0 20px;
 }
 .page3-about .part2 h1{
     padding: 20px 0;
     font-size: 28px;
-    color: #182042;
+    color: var(--main-color);
 }
 .page3-about .part2 p{
-    color: #515c89;
+    color: var(--grey-color);
     font-size: 14px;
 }
 
@@ -588,11 +576,11 @@ section button:hover{
 .page3-about .part2 .sec2 div  h3{
     font-size: 16px;
     padding: 8px 0;
-    color: #222F65;
+    color: var(--main-color);
 }
 .page3-about .part2 .sec2 div p{
     font-size: 14px;
-    color: #5D6970;
+    color: var(--grey-color);
 }
 .page3-about .part2 .sec3{
     display: flex;
@@ -601,7 +589,7 @@ section button:hover{
 }
 .page3-about .sec2 i, .page3-about .sec3 i {
     font-size: 24px;
-    color: #222F65; 
+    color: var(--main-color); 
 }
 .page3-about .part2 .sec3 div{
     width: 250px;
@@ -609,7 +597,7 @@ section button:hover{
 .page3-about .part2 .sec3 div  h3{
     font-size: 16px;
     padding: 8px 0;
-    color: #222F65;
+    color: var(-main-color);
 }
 
 .page3-about .sec2 h3, .page3-about .sec3 h3 {
@@ -617,15 +605,14 @@ section button:hover{
 }
 
 .page3-about .sec2 p, .page3-about .sec3 p {
-    color: #4b5563;
+    color: var(--grey-color);
 }
 
 /* ---------------------------  contact -------------------------- */
 
 .contact-box {
     display: flex;
-    background-color: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px var(--shadow-lite-color);
 } 
 .contact-box .sec1 {
     width: 50%;
@@ -650,16 +637,17 @@ section button:hover{
 
 .contact-box .sec2 h1 {
     font-size: 28px;
+    color: var(--white-title-color);
     margin: 8px 0;
     font-family: "Roboto", sans-serif;
     font-weight: 800;
 }
 
 .contact-box .sec2 h1 span {
-    color: #6E85E4;
+    color: var(--blue-ciel-color);
 }
 .contact-box .message-box{
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px var(--shadow-lite-color);
     width: 70%;
     padding: 16px;
 }
@@ -668,7 +656,7 @@ section button:hover{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #6E85E4;
+    color: var(--blue-ciel-color);
 }
 
 .contact-box .message-box .input, .contact-box .message-box .textarea {
@@ -678,7 +666,7 @@ section button:hover{
     color: #546195;
     font-size: 12px;
     border: none;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px var(--shadow-lite-color);
 }
 .textarea {
     resize: none;
@@ -694,7 +682,8 @@ section button:hover{
 }
 
 .button-submit {
-    background-color: #6E85E4;
+    background-color: var(--blue-ciel-color);
+    box-shadow: 0 5px 10px var(--shadow-color);
     color: white;
     border: none;
     padding: 6px;
@@ -704,7 +693,7 @@ section button:hover{
 .button-submit:hover {
     cursor: pointer;
     background-color: rgb(34, 47, 101);
-    box-shadow: 0 5px 15px rgba(34, 47, 101, 0.3);
+    box-shadow: 0 5px 10px var(--shadow-color);
     transition: transform 0.2s ease;
     transform: translateY(2px);
 }
@@ -719,20 +708,19 @@ section button:hover{
 .box-carts div{
     width: 200px;
     height: 200px;
-    background-color: #ffffff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: var(white-cart-color);
 }
 
-.card {
-    background-color: #ffffff;
-    color: #6b7280;
-    font-size: 16px;
+.card{
     text-align:center;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--shadow-lite-color);
     transition: transform 0.4s ease;
+}
+.card p{
+    color: var(--grey-color);
 }
 
 .card:hover{
@@ -742,22 +730,21 @@ section button:hover{
 .card h3{
     font-size: 16px;
     margin-bottom: 10px;
-    color:#222F65;
+    color:var(--main-color);
 }
 
 .card i{
     font-size: 32px;
-    color: #6E85E4;
+    color: var(--blue-ciel-color);
     margin-bottom: 10px;
 }
 
-/* ------------------------------------------- */
+/* ---------------------- Page : Produits --------------------- */
 
 .page-produits{
     height: 1000px;
     text-align: center;
-    background-color: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px var(--shadow-lite-color);
     padding: 20px 0;
 }
 .page-produits h1{
@@ -765,10 +752,10 @@ section button:hover{
     font-family: "Roboto", sans-serif;
     font-weight: 800;
     padding: 30px 0;
-    color: #091133;
+    color: var(--main-color);
 }
 .page-produits h1 span{
-   color: #6E85E4;
+   color: var(--seconde-color);
 }
 .box-carts-prod{
     display: flex;
@@ -781,9 +768,9 @@ section button:hover{
     flex-basis: 30%;
     padding: 20px 0;
     margin-bottom: 20px; 
-    background-color: #ffffff;
+    background-color: var(--white-cart-color);
     font-size: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--shadow-lite-color);
 }
 .cart-produit:hover{
     transform: translateY(5px);
@@ -793,15 +780,15 @@ section button:hover{
 .cart-produit img {
     width: 240px;
     height: 160px;
-    object-fit: contain;
-    background-color: #afb2be;
+    background-color: var(--white-grey-color);
 }
 .cart-produit h3{
     padding: 5px;
+    color: var(--white-title-color);
 }
 
 .cart-produit p {
-    color: #666;
+    color: var(--grey-color);
     margin: 5px 0;
 }
 
@@ -830,12 +817,12 @@ section button:hover{
     color: #ffffff;
     margin-left: 10px;
     border: none;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px var(--shadow-lite-color);
 }
 .btn-recherche:hover{
     cursor: pointer;
     background-color: #6E85E4;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 10px var(--shadow-color);
     transition: transform 0.2s ease;
     transform: translateX(2px);
 }
@@ -848,7 +835,7 @@ section button:hover{
     color: #546195;
     font-size: 12px;
     border: none;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px var(--shadow-lite-color);
 }
 .input-recherche:hover{
     transition: transform 0.2s ease;
