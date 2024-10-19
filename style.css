@@ -9,7 +9,7 @@
 }
 .container .page1 {
     height: 100vh;
-    background-image: url("Path.png");
+    background-image: url("/images/Path.png");
     background-position-x: right;
     background-repeat: no-repeat;
     background-size: 620px;
