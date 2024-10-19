@@ -47,7 +47,7 @@
     --shadow-lite-color:rgba(255, 255, 255, 0.1);
 }
 .containerDark{
-    background-color: #010112;
+    background-color: #000010;
     box-shadow: 0 0 10px var(--shadow-lite-color);
 }
 
